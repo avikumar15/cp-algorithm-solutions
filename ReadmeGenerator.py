@@ -38,7 +38,7 @@ for key in codes:
 		f2 = open(filename, 'r')
 		link = f2.readline().split()[-1]
 		print(link)
-		readmetxt += '|' + str(num) + '|[' + filename.split('/')[-1].split('.')[0] + '](' + link + ') | [C++](./' + filename + ')|' + filename.split('/')[2] + '|' + filename.split('/')[3] + '\n'
+		readmetxt += '|' + str(num) + '|[' + filename.split('/')[-1].split('.')[0] + '](' + link + ') | ![C++](./' + filename + ')|' + filename.split('/')[2] + '|' + filename.split('/')[3] + '\n'
 		num = num + 1
 
 f = open('README.md', 'w')
